@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset básico para alguns elementos */
+body,
+h1,
+p,
+div,
+button,
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+  background-color: #f6f8fa;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.version {
+  margin-top: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  color: #585656;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.display-data {
+  background-color: #e8e8e8;
+  padding: 10px 15px;
+  border-radius: 4px;
+  color: #333;
+}
+
+.display-data-label {
+  margin-bottom: 2px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  font-size: 12px;
+  padding-bottom: 8px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  /* ajuste de acordo com o seu layout */
+}
+
+.checkbox-container label {
+  margin-right: 10px;
+}
+
+/* Estilo para o checkbox - opcional */
+.toggle {
+  transform: scale(1.2);
+  /* Torna o checkbox um pouco maior */
+  width: auto;
+  margin: 0 0 0 10px;
+}
